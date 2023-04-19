@@ -178,6 +178,3 @@ with st.container():
 with st.container():
 		fig = rest_more_votes (df1)
 		st.plotly_chart( fig, use_container_width = True)
-		
-with st.container():
-	df_aux = df1.loc[:, ['country_name', 'restaurant_name', 'city', 'cuisines', 'aggregate_rating', 'votes']].sort_values('aggregate_rating', ascending=False).reset_index()
